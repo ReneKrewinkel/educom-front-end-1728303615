@@ -1,0 +1,23 @@
+@use "sass:math";
+
+@function pxToRem($pxValue) {
+    @return math.div($pxValue, 16px) * 1rem;
+}
+
+div {
+    width: pxToRem(480);
+}
+
+@mixin body-theme($theme) {
+    @if $theme == "light" {
+        background-color: $light-bg;
+    } @else {
+        background-color: $dark-bg;
+    }
+}
+
+$red: #ff0000;
+
+a:visited {
+    color: darken($red, 25%);
+}
