@@ -1,0 +1,10 @@
+$primary-color: #ff00ff;
+
+.text {
+    color: $primary-color;
+}
+
+button {
+    color: $primary-color;
+    border: 2px solid $primary-color;
+}
