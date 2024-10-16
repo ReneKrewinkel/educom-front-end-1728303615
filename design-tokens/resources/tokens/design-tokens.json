@@ -1,0 +1,19 @@
+{
+    "unit": "rem",
+    "colors": [
+      { "type": "primary", "color": "rgb(233, 171, 83)", "shades": [10,20,30,40,50] },
+      { "type": "primary", "color": "rgb(241, 94, 80)", "shades": [10,20,30,40,50] },
+      { "type": "neutral", "color": "rgb(255, 253, 250)", "shades": [10,20,30,40,50] },
+      { "type": "neutral", "color": "rgb(197, 198, 206)", "shades": [10,20,30,40,50] },
+      { "type": "neutral", "color": "rgb(93, 95, 121)", "shades": [10,20,30,40,50] },
+      { "type": "neutral", "color": "rgb(0, 0, 26)", "shades": [10,20,30,40,50] }
+    ],
+    "fonts": [
+      { "type": "main-text", "uri": "'../fonts/resources/fonts/Inter-VariableFont_opsz,wght'", "sizes": [14, 20, 36, 44] }
+    ],
+    "spacing": {
+      "small": 1,
+      "medium": 2,
+      "large": 3
+    }
+  }
