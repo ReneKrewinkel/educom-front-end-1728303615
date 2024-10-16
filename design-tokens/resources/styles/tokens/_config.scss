@@ -1,5 +1,6 @@
-$unit: map-get($tokens, 'unit');
-$colors: map-get($tokens, 'colors');
-$fonts: map-get($tokens, 'fonts');
+$unit: map-get($tokens, "unit");
+$colors: map-get($tokens, "colors");
+$fonts: map-get($tokens, "fonts");
 
-$color-types: "bg" "Background Color" "background-color", "fg" "Foreground Color" "color";
+$color-types: "bg" "Background Color" "background-color",
+  "fg" "Foreground Color" "color";
