@@ -1,0 +1,15 @@
+@mixin flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background: #CCC;
+}
+
+.card {
+    @include flex-container;
+}
+
+.aside {
+    @include flex-container;
+}
