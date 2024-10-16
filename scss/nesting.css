@@ -1,0 +1,19 @@
+nav {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav li {
+  margin-right: 2.5rem;
+}
+nav li a {
+  text-decoration: none;
+  color: #707070;
+}
+nav li a:hover {
+  color: #069c54;
+}/*# sourceMappingURL=nesting.css.map */

@@ -1,0 +1,22 @@
+nav {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+
+    ul {
+        list-style:none;
+        display: flex;
+    }
+
+    li {
+        margin-right: 2.5rem;
+        a {
+            text-decoration: none;
+            color: #707070;
+
+            &:hover {
+                color: #069c54;
+            }
+        }
+    }
+}
