@@ -13,7 +13,7 @@
     { "type": "main-text-bold","uri": "'resources/fonts/Inter-VariableFont_opsz,wght'", "sizes": [14, 20, 36, 44] },
     { "type": "main-text-heading","uri": "'resources/fonts/Inter-VariableFont_opsz,wght'", "sizes": [14, 20, 36, 44] }
   ],
-  "spacing": [
+  "letterspacing": [
     { "type": "small", "size": [1]},
     { "type": "medium", "size": [2]},
     { "type": "large", "size": [3]}

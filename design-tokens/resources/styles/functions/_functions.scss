@@ -80,13 +80,13 @@ $types: "light", "dark";
 @function rootSpacing($type, $style) {
   $type: map-get($style, "type");
   $size: map-get($style, "size");
-  $s: pxToRem($size);
+
   $e: ();
 
   // Spacings
   $class: "--spacing-" + $type;
   $spacing: (
-    $class: $s,
+    $class: $size,
   );
   $e: map-merge($e, $spacing);
 
