@@ -1,7 +1,7 @@
 :root {
   @each $ct, $cd in $color-types {
     @each $style in $colors {
-      $type: map-get($style, 'type');
+      $type: map-get($style, "type");
       $shades: rootColor($type, $ct, $style);
       @each $shade, $value in $shades {
         #{$shade}: #{$value};
