@@ -9,7 +9,7 @@ $types: "light", "dark";
 
 @function pxToRem($pxValue) {
   @if $unit == "rem" {
-    @return (($pxValue / 16) * 1rem);
+    @return (calc($pxValue / 16) * 1rem);
   } @else {
     @return ($pxValue * 1px);
   }
@@ -74,6 +74,20 @@ $types: "light", "dark";
     );
     $e: map-merge($e, $q);
   }
+  @return ($e);
+}
+
+@function rootSpacing($type, $style) {
+  $type: map-get($style, "type");
+  $size: map-get($style, "size");
+  $s: pxToRem($size);
+  $e: ();
+
+  // Spacings
+  $class: "--spacing-" + $type;
+  $spacing: ($class: $s);
+  $e: map-merge($e, $spacing);
+
   @return ($e);
 }
 

@@ -38,9 +38,14 @@ $tokens: (
     uri: 'resources/fonts/Inter-VariableFont_opsz,wght',
     sizes: (14, 20, 36, 44)
   )),
-  spacing: (
-    small: 1,
-    medium: 2,
-    large: 3
-  )
+  spacing: ((
+    type: small,
+    size: (1)
+  ), (
+    type: medium,
+    size: (2)
+  ), (
+    type: large,
+    size: (3)
+  ))
 );

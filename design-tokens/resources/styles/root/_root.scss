@@ -26,4 +26,9 @@
 
   /** SPACING **/
   /// Read $spacing from config
+  @each $style in $spacing {
+    $type: map-get($style, "type");
+    $size: rootSpacing($type, $style);
+    #{$type}: #{$size};
+  }
 }
