@@ -1,3 +1,77 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
 /** FONTS **/
 /*! main-text-regular */
 @font-face {
@@ -163,6 +237,23 @@
   --fg-darkest-dark-30: black;
   --fg-darkest-dark-40: black;
   --fg-darkest-dark-50: black;
+  /** FONT **/
+  --main-text-regular: resources/fonts/Inter-VariableFont_opsz,wght;
+  --fs-14: 0.875rem;
+  --fs-20: 1.25rem;
+  --fs-36: 2.25rem;
+  --fs-44: 2.75rem;
+  --main-text-bold: resources/fonts/Inter-VariableFont_opsz,wght;
+  --fs-14: 0.875rem;
+  --fs-20: 1.25rem;
+  --fs-36: 2.25rem;
+  --fs-44: 2.75rem;
+  --main-text-heading: resources/fonts/Inter-VariableFont_opsz,wght;
+  --fs-14: 0.875rem;
+  --fs-20: 1.25rem;
+  --fs-36: 2.25rem;
+  --fs-44: 2.75rem;
+  /** SPACING **/
 }
 
 /** UTILITY: Colors **/
@@ -706,4 +797,68 @@
 
 .fg-darkest-dark-50 {
   color: var(--fg-darkest-dark-50);
+}
+
+/** UTILITY: Fonts **/
+/*! main-text-regular */
+--main-text-regular {
+  size: var(--main-text-regular);
+}
+
+--main-text-regular-14 {
+  size: var(--main-text-regular-14);
+}
+
+--main-text-regular-20 {
+  size: var(--main-text-regular-20);
+}
+
+--main-text-regular-36 {
+  size: var(--main-text-regular-36);
+}
+
+--main-text-regular-44 {
+  size: var(--main-text-regular-44);
+}
+
+/*! main-text-bold */
+--main-text-bold {
+  size: var(--main-text-bold);
+}
+
+--main-text-bold-14 {
+  size: var(--main-text-bold-14);
+}
+
+--main-text-bold-20 {
+  size: var(--main-text-bold-20);
+}
+
+--main-text-bold-36 {
+  size: var(--main-text-bold-36);
+}
+
+--main-text-bold-44 {
+  size: var(--main-text-bold-44);
+}
+
+/*! main-text-heading */
+--main-text-heading {
+  size: var(--main-text-heading);
+}
+
+--main-text-heading-14 {
+  size: var(--main-text-heading-14);
+}
+
+--main-text-heading-20 {
+  size: var(--main-text-heading-20);
+}
+
+--main-text-heading-36 {
+  size: var(--main-text-heading-36);
+}
+
+--main-text-heading-44 {
+  size: var(--main-text-heading-44);
 }/*# sourceMappingURL=main.css.map */

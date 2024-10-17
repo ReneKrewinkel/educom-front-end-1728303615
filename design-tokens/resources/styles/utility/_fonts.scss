@@ -1,0 +1,12 @@
+/** UTILITY: Fonts **/
+@each $style in $fonts {
+  $type: map-get($style, "type");
+
+  /*! #{$type} */
+  $sizes: utilityFont($type, $style);
+  @each $size, $value in $sizes {
+    #{$size} {
+      size: unquote($value);
+    }
+  }
+}

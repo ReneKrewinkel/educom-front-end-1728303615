@@ -13,4 +13,17 @@
       }
     }
   }
+
+  /** FONT **/
+  /// Read $fonts from config
+  @each $style in $fonts {
+    $type: map-get($style, "type");
+    $sizes: rootFont($type, $style);
+    @each $size, $value in $sizes {
+      #{$size}: #{$value};
+    }
+  }
+
+  /** SPACING **/
+  /// Read $spacing from config
 }
