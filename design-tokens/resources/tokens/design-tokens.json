@@ -9,11 +9,9 @@
     { "type": "darkest", "color": "#00001A", "shades": [10, 20, 30, 40, 50] }
   ],
   "fonts": [
-    {
-      "type": "main-text",
-      "uri": "'../fonts/resources/fonts/Inter-VariableFont_opsz,wght'",
-      "sizes": [14, 20, 36, 44]
-    }
+    { "type": "main-text-regular","uri": "'resources/fonts/Inter-VariableFont_opsz,wght'", "sizes": [14, 20, 36, 44] },
+    { "type": "main-text-bold","uri": "'resources/fonts/Inter-VariableFont_opsz,wght'", "sizes": [14, 20, 36, 44] },
+    { "type": "main-text-heading","uri": "'resources/fonts/Inter-VariableFont_opsz,wght'", "sizes": [14, 20, 36, 44] }
   ],
   "spacing": {
     "small": 1,

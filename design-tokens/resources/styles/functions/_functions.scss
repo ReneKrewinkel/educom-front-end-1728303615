@@ -29,6 +29,7 @@ $types: "light", "dark";
 
   $e: ();
 
+  // Base Color
   $class: "--" + $key + "-" + $type;
   $base: (
     $class: $color,
@@ -42,6 +43,32 @@ $types: "light", "dark";
       $q: (
         $class: $s,
       );
+      $e: map-merge($e, $q);
+    }
+  }
+
+  @return ($e);
+}
+
+@function utilityColor($type, $key, $style) {
+  $type: map-get($style, 'type');
+  $color: map-get($style, 'color');
+  $shades: map-get($style, 'shades');
+
+  $e: ();
+
+  /// Base Color
+  $class: '.' + $key + '-' + $type;
+  $var: 'var(--' + $key + '-' + $type + ')';
+  $base: ($class: $var);
+  $e: map-merge($e, $base);
+
+  /// Shades
+  @each $t in $types {
+    @each $shade in $shades {
+      $class: '.' + $key + '-' + $type + '-' + $t + '-' + $shade;
+      $var: 'var(--' + $key + '-' + $type + '-' + $t + '-' + $shade + ')';
+      $q: ($class: $var);
       $e: map-merge($e, $q);
     }
   }
