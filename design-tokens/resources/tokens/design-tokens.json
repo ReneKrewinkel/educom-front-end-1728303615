@@ -17,5 +17,10 @@
     { "type": "small", "size": [1]},
     { "type": "medium", "size": [2]},
     { "type": "large", "size": [3]}
+  ],
+  "padding": [
+    { "type": "small", "size": [20]},
+    { "type": "medium", "size": [40]},
+    { "type": "large", "size": [80]}
   ]
 }

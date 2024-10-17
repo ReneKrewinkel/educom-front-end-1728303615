@@ -85,8 +85,26 @@ $types: "light", "dark";
 
   // Spacings
   $class: "--spacing-" + $type;
-  $spacing: ($class: $s);
+  $spacing: (
+    $class: $s,
+  );
   $e: map-merge($e, $spacing);
+
+  @return ($e);
+}
+
+@function rootPadding($type, $style) {
+  $type: map-get($style, "type");
+  $size: map-get($style, "size");
+  $s: pxToRem($size);
+  $e: ();
+
+  /// Paddings
+  $class: "--padding-" + $type;
+  $padding: (
+    $class: $s,
+  );
+  $e: map-merge($e, $padding);
 
   @return ($e);
 }

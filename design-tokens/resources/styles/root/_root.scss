@@ -31,4 +31,12 @@
     $size: rootSpacing($type, $style);
     #{$type}: #{$size};
   }
+
+  /** PADDING **/
+  /// Read $padding from config
+  @each $style in $padding {
+    $type: map-get($style, "type");
+    $size: rootPadding($type, $style);
+    #{$type}: #{$size};
+  }
 }
