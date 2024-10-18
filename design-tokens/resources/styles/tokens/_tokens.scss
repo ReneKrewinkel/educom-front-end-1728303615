@@ -34,27 +34,11 @@ $tokens: (
   fonts: ((
     type: main-text-regular,
     uri: '../fonts/Inter_18pt-Regular',
-    sizes: (14, 20, 36, 44)
-  ), (
-    type: main-text-extra-light,
-    uri: '../fonts/Inter_18pt-ExtraLight',
-    sizes: (14, 20, 36, 44)
-  ), (
-    type: main-text-light,
-    uri: '../fonts/Inter_18pt-Light',
-    sizes: (14, 20, 36, 44)
-  ), (
-    type: main-text-medium,
-    uri: '../fonts/Inter_18pt-Medium',
-    sizes: (14, 20, 36, 44)
-  ), (
-    type: main-text-semi-bold,
-    uri: '../fonts/Inter_18pt-SemiBold',
-    sizes: (14, 20, 36, 44)
+    sizes: (14, 16, 18, 20, 24, 36, 44)
   ), (
     type: main-text-bold,
     uri: '../fonts/Inter_18pt-Bold',
-    sizes: (14, 20, 36, 44)
+    sizes: (14, 16, 18, 20, 24, 36, 44)
   )),
   headings: (
     type: heading,
@@ -64,9 +48,13 @@ $tokens: (
     ), (
       h2: 36
     ), (
-      h3: 20
+      h3: 24
     ), (
-      h4: 18
+      h4: 20
+    ), (
+      h5: 18
+    ), (
+      h6: 16
     ))
   ),
   spacing: (
