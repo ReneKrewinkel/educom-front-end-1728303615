@@ -1,6 +1,7 @@
 .small-card {
   @include is-flex;
   @include is-row;
+  padding: pxToRem(20) 0;
   img {
     object-fit: contain;
   }

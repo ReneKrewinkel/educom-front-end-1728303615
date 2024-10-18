@@ -4,22 +4,32 @@ a {
 
   &:hover {
     color: var(--fg-accent);
+    transition: all 0.4ms ease;
+  }
+}
+
+.nav a {
+  color: var(--fg-darkest);
+  padding: pxToRem(20);
+  &:hover {
+    color: var(--fg-accent);
+    transition: all 0.4ms ease;
   }
 }
 
 .new-in-block a {
-  text-decoration: none;
+  color: var(--fg-light);
+
   &:hover {
     color: var(--fg-primary);
+    transition: all 0.4ms ease;
   }
 }
 
-
-.nav a {
-    color: var(--fg-dark);
-    padding: pxToRem(20);
-    &:hover {
-        color: var(--fg-accent);
-        transition: all 0.4ms ease;
-    }
+.small-card a {
+  color: var(--fg-darkest);
+  &:hover {
+    color: var(--fg-accent);
+    transition: all 0.4ms ease;
+  }
 }
