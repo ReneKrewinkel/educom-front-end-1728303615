@@ -4,7 +4,7 @@ a {
 
   &:hover {
     color: var(--fg-accent);
-    transition: all 0.4ms ease;
+    transition: all 0.3s ease;
   }
 }
 
@@ -13,7 +13,7 @@ a {
   padding: pxToRem(20);
   &:hover {
     color: var(--fg-accent);
-    transition: all 0.4ms ease;
+    transition: all 0.3s ease;
   }
 }
 
@@ -22,7 +22,7 @@ a {
 
   &:hover {
     color: var(--fg-primary);
-    transition: all 0.4ms ease;
+    transition: all 0.3s ease;
   }
 }
 
@@ -30,6 +30,6 @@ a {
   color: var(--fg-darkest);
   &:hover {
     color: var(--fg-accent);
-    transition: all 0.4ms ease;
+    transition: all 0.3s ease;
   }
 }

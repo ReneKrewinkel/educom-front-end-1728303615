@@ -892,7 +892,7 @@ a {
 }
 a:hover {
   color: var(--fg-accent);
-  transition: all 0.4ms ease;
+  transition: all 0.3s ease;
 }
 
 .nav a {
@@ -901,7 +901,7 @@ a:hover {
 }
 .nav a:hover {
   color: var(--fg-accent);
-  transition: all 0.4ms ease;
+  transition: all 0.3s ease;
 }
 
 .new-in-block a {
@@ -909,7 +909,7 @@ a:hover {
 }
 .new-in-block a:hover {
   color: var(--fg-primary);
-  transition: all 0.4ms ease;
+  transition: all 0.3s ease;
 }
 
 .small-card a {
@@ -917,7 +917,7 @@ a:hover {
 }
 .small-card a:hover {
   color: var(--fg-accent);
-  transition: all 0.4ms ease;
+  transition: all 0.3s ease;
 }
 
 button {
@@ -935,7 +935,7 @@ button {
 }
 .main-card button:hover {
   background-color: var(--bg-darkest);
-  transition: all 0.4ms ease;
+  transition: all 0.3s ease;
 }
 
 .align-start {
