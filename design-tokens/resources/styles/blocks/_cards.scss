@@ -1,7 +1,9 @@
 .small-card {
   @include is-flex;
   @include is-row;
-
+  img {
+    object-fit: contain;
+  }
   h1 {
     color: var(--fg-neutral);
   }
@@ -13,5 +15,28 @@
     @include is-column;
     @include float-evenly;
     padding-left: pxToRem(20);
+  }
+}
+
+.main-card {
+  @include is-flex;
+  @include is-column;
+
+  img {
+    object-fit: contain;
+  }
+
+  h1 {
+    color: var(--fg-darkest);
+  }
+
+  div {
+    @include is-flex;
+    @include is-row;
+    div {
+      @include is-flex;
+      @include is-column;
+      @include float-around;
+    }
   }
 }

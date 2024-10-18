@@ -3,7 +3,7 @@ a {
   color: inherit;
 
   &:hover {
-    color: (--fg-accent);
+    color: var(--fg-accent);
   }
 }
 
@@ -16,7 +16,7 @@ a {
 
 
 .nav a {
-    color: inhvar(--fg-dark);
+    color: var(--fg-dark);
     padding: pxToRem(20);
     &:hover {
         color: var(--fg-accent);

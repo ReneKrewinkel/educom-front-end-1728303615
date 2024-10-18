@@ -1,0 +1,16 @@
+button {
+    border: none;
+    padding: 0.5rem 1rem;
+    width: fit-content;
+    text-transform: uppercase;
+    letter-spacing: pxToRem(5);
+}
+
+.main-card button {
+    background-color: var(--bg-accent);
+    color: var(--fg-light);
+    &:hover {
+        background-color: var(--bg-darkest);
+        transition: all 0.4ms ease;
+    }
+}

@@ -965,7 +965,7 @@ a {
   color: inherit;
 }
 a:hover {
-  color: --fg-accent;
+  color: var(--fg-accent);
 }
 
 .new-in-block a {
@@ -976,11 +976,29 @@ a:hover {
 }
 
 .nav a {
-  color: inhvar(--fg-dark);
+  color: var(--fg-dark);
   padding: 1.25rem;
 }
 .nav a:hover {
   color: var(--fg-accent);
+  transition: all 0.4ms ease;
+}
+
+button {
+  border: none;
+  padding: 0.5rem 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-transform: uppercase;
+  letter-spacing: 0.3125rem;
+}
+
+.main-card button {
+  background-color: var(--bg-accent);
+  color: var(--fg-light);
+}
+.main-card button:hover {
+  background-color: var(--bg-darkest);
   transition: all 0.4ms ease;
 }
 
@@ -1067,6 +1085,10 @@ h4 {
   display: flex;
   flex-direction: row;
 }
+.small-card img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .small-card h1 {
   color: var(--fg-neutral);
 }
@@ -1078,4 +1100,25 @@ h4 {
   flex-direction: column;
   justify-content: space-evenly;
   padding-left: 1.25rem;
+}
+
+.main-card {
+  display: flex;
+  flex-direction: column;
+}
+.main-card img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.main-card h1 {
+  color: var(--fg-darkest);
+}
+.main-card div {
+  display: flex;
+  flex-direction: row;
+}
+.main-card div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }/*# sourceMappingURL=main.css.map */
