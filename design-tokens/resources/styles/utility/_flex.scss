@@ -1,0 +1,21 @@
+@mixin is-flex {
+  display: flex;
+}
+
+@mixin is-row {
+  flex-direction: row;
+}
+
+@mixin is-column {
+  flex-direction: column;
+}
+
+.flex-col {
+  @include is-flex;
+  @include is-column;
+}
+
+.flex-row {
+  @include is-flex;
+  @include is-row;
+}

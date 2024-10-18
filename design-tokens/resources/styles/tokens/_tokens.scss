@@ -1,5 +1,11 @@
 $tokens: (
   unit: rem,
+  page: (
+    backgroundColor: light,
+    margin-left: 50,
+    margin-right: 50,
+    padding: 20
+  ),
   colors: ((
     type: primary,
     color: #E9AB53,
@@ -27,43 +33,51 @@ $tokens: (
   )),
   fonts: ((
     type: main-text-regular,
-    uri: 'resources/fonts/Inter_18pt-Regular',
+    uri: '../fonts/Inter_18pt-Regular',
     sizes: (14, 20, 36, 44)
   ), (
     type: main-text-extra-light,
-    uri: 'resources/fonts/Inter_18pt-ExtraLight',
+    uri: '../fonts/Inter_18pt-ExtraLight',
     sizes: (14, 20, 36, 44)
   ), (
     type: main-text-light,
-    uri: 'resources/fonts/Inter_18pt-Light',
+    uri: '../fonts/Inter_18pt-Light',
     sizes: (14, 20, 36, 44)
   ), (
     type: main-text-medium,
-    uri: 'resources/fonts/Inter_18pt-Medium',
+    uri: '../fonts/Inter_18pt-Medium',
     sizes: (14, 20, 36, 44)
   ), (
     type: main-text-semi-bold,
-    uri: 'resources/fonts/Inter_18pt-SemiBold',
+    uri: '../fonts/Inter_18pt-SemiBold',
     sizes: (14, 20, 36, 44)
   ), (
     type: main-text-bold,
-    uri: 'resources/fonts/Inter_18pt-Bold',
+    uri: '../fonts/Inter_18pt-Bold',
     sizes: (14, 20, 36, 44)
   ), (
     type: main-text-extra-bold,
-    uri: 'resources/fonts/Inter_18pt-ExtraBold',
+    uri: '../fonts/Inter_18pt-ExtraBold',
     sizes: (14, 20, 36, 44)
   )),
-  letterspacing: ((
-    type: small,
-    size: (1)
-  ), (
-    type: medium,
-    size: (2)
-  ), (
-    type: large,
-    size: (3)
-  )),
+  headings: (
+    type: heading,
+    uri: '../fonts/Inter_18pt-ExtraBold',
+    variant: ((
+      h1: 44
+    ), (
+      h2: 36
+    ), (
+      h3: 20
+    ), (
+      h4: 18
+    ))
+  ),
+  spacing: (
+    small: 1,
+    medium: 2,
+    large: 3
+  ),
   padding: ((
     type: small,
     size: (20)

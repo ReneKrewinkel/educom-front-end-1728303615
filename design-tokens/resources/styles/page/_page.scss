@@ -1,0 +1,19 @@
+body {
+  $margin-left: map-get($page, "marginleft");
+  margin-left: pxToRem($margin-left);
+  $margin-right: map-get($page, "marginright");
+  margin-right: pxToRem($margin-right);
+  $padding: map-get($page, "padding");
+  padding: pxToRem($padding);
+  background-color: var(--bg- + map-get($page, "backgroundColor"));
+  font-family: "main-text-regular";
+}
+
+@mixin is-grid {
+  display: grid;
+}
+
+.grid-col-3 {
+  @include is-grid;
+  grid-template-columns: repeat(3, 1fr);
+}

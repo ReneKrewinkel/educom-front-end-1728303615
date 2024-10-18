@@ -76,37 +76,42 @@ select {
 /*! main-text-regular */
 @font-face {
   font-family: "main-text-regular";
-  src: url("resources/fonts/Inter_18pt-Regular.woff2") format("woff2"), url("resources/fonts/Inter_18pt-Regular.woff") format("woff"), url("resources/fonts/Inter_18pt-Regular.ttf") format("ttf");
+  src: url("../fonts/Inter_18pt-Regular.woff2") format("woff2"), url("../fonts/Inter_18pt-Regular.woff") format("woff"), url("../fonts/Inter_18pt-Regular.ttf") format("ttf");
 }
 /*! main-text-extra-light */
 @font-face {
   font-family: "main-text-extra-light";
-  src: url("resources/fonts/Inter_18pt-ExtraLight.woff2") format("woff2"), url("resources/fonts/Inter_18pt-ExtraLight.woff") format("woff"), url("resources/fonts/Inter_18pt-ExtraLight.ttf") format("ttf");
+  src: url("../fonts/Inter_18pt-ExtraLight.woff2") format("woff2"), url("../fonts/Inter_18pt-ExtraLight.woff") format("woff"), url("../fonts/Inter_18pt-ExtraLight.ttf") format("ttf");
 }
 /*! main-text-light */
 @font-face {
   font-family: "main-text-light";
-  src: url("resources/fonts/Inter_18pt-Light.woff2") format("woff2"), url("resources/fonts/Inter_18pt-Light.woff") format("woff"), url("resources/fonts/Inter_18pt-Light.ttf") format("ttf");
+  src: url("../fonts/Inter_18pt-Light.woff2") format("woff2"), url("../fonts/Inter_18pt-Light.woff") format("woff"), url("../fonts/Inter_18pt-Light.ttf") format("ttf");
 }
 /*! main-text-medium */
 @font-face {
   font-family: "main-text-medium";
-  src: url("resources/fonts/Inter_18pt-Medium.woff2") format("woff2"), url("resources/fonts/Inter_18pt-Medium.woff") format("woff"), url("resources/fonts/Inter_18pt-Medium.ttf") format("ttf");
+  src: url("../fonts/Inter_18pt-Medium.woff2") format("woff2"), url("../fonts/Inter_18pt-Medium.woff") format("woff"), url("../fonts/Inter_18pt-Medium.ttf") format("ttf");
 }
 /*! main-text-semi-bold */
 @font-face {
   font-family: "main-text-semi-bold";
-  src: url("resources/fonts/Inter_18pt-SemiBold.woff2") format("woff2"), url("resources/fonts/Inter_18pt-SemiBold.woff") format("woff"), url("resources/fonts/Inter_18pt-SemiBold.ttf") format("ttf");
+  src: url("../fonts/Inter_18pt-SemiBold.woff2") format("woff2"), url("../fonts/Inter_18pt-SemiBold.woff") format("woff"), url("../fonts/Inter_18pt-SemiBold.ttf") format("ttf");
 }
 /*! main-text-bold */
 @font-face {
   font-family: "main-text-bold";
-  src: url("resources/fonts/Inter_18pt-Bold.woff2") format("woff2"), url("resources/fonts/Inter_18pt-Bold.woff") format("woff"), url("resources/fonts/Inter_18pt-Bold.ttf") format("ttf");
+  src: url("../fonts/Inter_18pt-Bold.woff2") format("woff2"), url("../fonts/Inter_18pt-Bold.woff") format("woff"), url("../fonts/Inter_18pt-Bold.ttf") format("ttf");
 }
 /*! main-text-extra-bold */
 @font-face {
   font-family: "main-text-extra-bold";
-  src: url("resources/fonts/Inter_18pt-ExtraBold.woff2") format("woff2"), url("resources/fonts/Inter_18pt-ExtraBold.woff") format("woff"), url("resources/fonts/Inter_18pt-ExtraBold.ttf") format("ttf");
+  src: url("../fonts/Inter_18pt-ExtraBold.woff2") format("woff2"), url("../fonts/Inter_18pt-ExtraBold.woff") format("woff"), url("../fonts/Inter_18pt-ExtraBold.ttf") format("ttf");
+}
+/*! heading */
+@font-face {
+  font-family: "heading";
+  src: url("../fonts/Inter_18pt-ExtraBold.woff") format("woff"), url("../fonts/Inter_18pt-ExtraBold.woff2") format("woff2"), url("../fonts/Inter_18pt-ExtraBold.tff") format("ttf");
 }
 /** CUSTOM PROPERTIES **/
 :root {
@@ -265,6 +270,19 @@ select {
   --main-text-semi-bold: "main-text-semi-bold";
   --main-text-bold: "main-text-bold";
   --main-text-extra-bold: "main-text-extra-bold";
+}
+
+body {
+  margin-left: 3.125rem;
+  margin-right: 3.125rem;
+  padding: 1.25rem;
+  background-color: var(--bg-light);
+  font-family: "main-text-regular";
+}
+
+.grid-col-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 /** UTILITY: Colors **/
@@ -949,4 +967,82 @@ select {
 .main-text-extra-bold-44 {
   font-family: "main-text-extra-bold";
   font-size: 2.75rem;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.float-right {
+  justify-content: flex-end;
+}
+
+.float-start {
+  justify-content: flex-start;
+}
+
+.float-center {
+  justify-content: center;
+}
+
+.float-around {
+  justify-content: space-around;
+}
+
+.float-between {
+  justify-content: space-between;
+}
+
+.float-evenly {
+  justify-content: space-evenly;
+}
+
+h1 {
+  font-family: "heading";
+  font-size: 2.75rem;
+}
+
+h2 {
+  font-family: "heading";
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-family: "heading";
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-family: "heading";
+  font-size: 1.125rem;
 }/*# sourceMappingURL=main.css.map */
