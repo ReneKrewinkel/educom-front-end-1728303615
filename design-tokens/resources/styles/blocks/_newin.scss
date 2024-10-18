@@ -1,0 +1,25 @@
+.new-in-block {
+  @include is-flex;
+  @include is-column;
+  @include float-between;
+  padding: pxToRem(20);
+  background-color: var(--bg-darkest);
+  color: (--fg-neutral);
+  h2 {
+    color: var(--fg-primary);
+  }
+  h3 {
+    color: var(--fg-light);
+  }
+
+  div {
+    @include is-flex;
+    @include is-column;
+    height: 25%;
+  }
+
+  hr {
+    border-top: pxToRem(1) solid var(--fg-neutral);
+    width: 100%;
+  }
+}

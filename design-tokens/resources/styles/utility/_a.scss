@@ -1,0 +1,25 @@
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    color: (--fg-accent);
+  }
+}
+
+.new-in-block a {
+  text-decoration: none;
+  &:hover {
+    color: var(--fg-primary);
+  }
+}
+
+
+.nav a {
+    color: inhvar(--fg-dark);
+    padding: pxToRem(20);
+    &:hover {
+        color: var(--fg-accent);
+        transition: all 0.4ms ease;
+    }
+}

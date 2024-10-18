@@ -1,0 +1,14 @@
+.nav {
+  @include is-flex;
+  @include is-row;
+  @include float-between;
+  div {
+    ul {
+      @include is-flex;
+      @include is-row;
+      li {
+        list-style-type: none;
+      }
+    }
+  }
+}

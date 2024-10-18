@@ -1,0 +1,17 @@
+.small-card {
+  @include is-flex;
+  @include is-row;
+
+  h1 {
+    color: var(--fg-neutral);
+  }
+  h4 {
+    color: var(--fg-darkest);
+  }
+  div {
+    @include is-flex;
+    @include is-column;
+    @include float-evenly;
+    padding-left: pxToRem(20);
+  }
+}

@@ -1,23 +1,23 @@
-.float-right {
+@mixin float-right {
   justify-content: flex-end;
 }
 
-.float-start {
+@mixin float-start {
   justify-content: flex-start;
 }
 
-.float-center {
+@mixin float-center {
   justify-content: center;
 }
 
-.float-around {
+@mixin float-around {
   justify-content: space-around;
 }
 
-.float-between {
+@mixin float-between {
   justify-content: space-between;
 }
 
-.float-evenly {
+@mixin float-evenly {
   justify-content: space-evenly;
 }

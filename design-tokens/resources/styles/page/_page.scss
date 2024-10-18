@@ -1,7 +1,7 @@
 body {
-  $margin-left: map-get($page, "marginleft");
+  $margin-left: map-get($page, "margin-left");
   margin-left: pxToRem($margin-left);
-  $margin-right: map-get($page, "marginright");
+  $margin-right: map-get($page, "margin-right");
   margin-right: pxToRem($margin-right);
   $padding: map-get($page, "padding");
   padding: pxToRem($padding);
@@ -16,4 +16,9 @@ body {
 .grid-col-3 {
   @include is-grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.span-2 {
+  grid-column: span 2;
 }
