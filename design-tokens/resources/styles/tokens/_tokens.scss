@@ -27,15 +27,31 @@ $tokens: (
   )),
   fonts: ((
     type: main-text-regular,
-    uri: 'resources/fonts/Inter-VariableFont_opsz,wght',
+    uri: 'resources/fonts/Inter_18pt-Regular',
+    sizes: (14, 20, 36, 44)
+  ), (
+    type: main-text-extra-light,
+    uri: 'resources/fonts/Inter_18pt-ExtraLight',
+    sizes: (14, 20, 36, 44)
+  ), (
+    type: main-text-light,
+    uri: 'resources/fonts/Inter_18pt-Light',
+    sizes: (14, 20, 36, 44)
+  ), (
+    type: main-text-medium,
+    uri: 'resources/fonts/Inter_18pt-Medium',
+    sizes: (14, 20, 36, 44)
+  ), (
+    type: main-text-semi-bold,
+    uri: 'resources/fonts/Inter_18pt-SemiBold',
     sizes: (14, 20, 36, 44)
   ), (
     type: main-text-bold,
-    uri: 'resources/fonts/Inter-VariableFont_opsz,wght',
+    uri: 'resources/fonts/Inter_18pt-Bold',
     sizes: (14, 20, 36, 44)
   ), (
-    type: main-text-heading,
-    uri: 'resources/fonts/Inter-VariableFont_opsz,wght',
+    type: main-text-extra-bold,
+    uri: 'resources/fonts/Inter_18pt-ExtraBold',
     sizes: (14, 20, 36, 44)
   )),
   letterspacing: ((

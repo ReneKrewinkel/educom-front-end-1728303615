@@ -1,12 +1,11 @@
 /** UTILITY: Fonts **/
 @each $style in $fonts {
   $type: map-get($style, "type");
-
-  /*! #{$type} */
-  $sizes: utilityFont($type, $style);
-  @each $size, $value in $sizes {
-    #{$size} {
-      size: unquote($value);
+  @each $s in map-get($style, "sizes") {
+    $v: $type + "-" + $s;
+    .#{$v} {
+      font-family: quote($type);
+      font-size: pxToRem($s);
     }
   }
 }

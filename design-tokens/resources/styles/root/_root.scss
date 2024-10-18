@@ -16,27 +16,11 @@
 
   /** FONT **/
   /// Read $fonts from config
-  @each $style in $fonts {
-    $type: map-get($style, "type");
-    $sizes: rootFont($type, $style);
-    @each $size, $value in $sizes {
-      #{$size}: #{$value};
-    }
+  @each $entry in $fonts {
+    $type: map-get($entry, "type");
+    $q: quote($type);
+    //--#{$type}: '#{$type}';
+    --#{$type}: '#{$q}';
   }
 
-  /** SPACING **/
-  /// Read $spacing from config
-  @each $style in $spacing {
-    $type: map-get($style, "type");
-    $size: rootSpacing($type, $style);
-    #{$type}: #{$size};
-  }
-
-  /** PADDING **/
-  /// Read $padding from config
-  @each $style in $padding {
-    $type: map-get($style, "type");
-    $size: rootPadding($type, $style);
-    #{$type}: #{$size};
-  }
 }

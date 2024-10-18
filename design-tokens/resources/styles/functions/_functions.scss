@@ -51,64 +51,6 @@ $types: "light", "dark";
   @return ($e);
 }
 
-@function rootFont($type, $style) {
-  $font: map-get($style, "type");
-  $uri: map-get($style, "uri");
-  $sizes: map-get($style, "sizes");
-
-  $e: ();
-
-  // Font Type
-  $class: "--" + $type;
-  $base: (
-    $class: $uri,
-  );
-  $e: map-merge($e, $base);
-
-  // Font Sizes
-  @each $size in $sizes {
-    $s: pxToRem($size);
-    $class: "--fs-" + $size;
-    $q: (
-      $class: $s,
-    );
-    $e: map-merge($e, $q);
-  }
-  @return ($e);
-}
-
-@function rootSpacing($type, $style) {
-  $type: map-get($style, "type");
-  $size: map-get($style, "size");
-
-  $e: ();
-
-  // Spacings
-  $class: "--spacing-" + $type;
-  $spacing: (
-    $class: $size,
-  );
-  $e: map-merge($e, $spacing);
-
-  @return ($e);
-}
-
-@function rootPadding($type, $style) {
-  $type: map-get($style, "type");
-  $size: map-get($style, "size");
-  $s: pxToRem($size);
-  $e: ();
-
-  /// Paddings
-  $class: "--padding-" + $type;
-  $padding: (
-    $class: $s,
-  );
-  $e: map-merge($e, $padding);
-
-  @return ($e);
-}
-
 @function utilityColor($type, $key, $style) {
   $type: map-get($style, "type");
   $color: map-get($style, "color");
@@ -139,30 +81,3 @@ $types: "light", "dark";
   @return ($e);
 }
 
-@function utilityFont($type, $style) {
-  $type: map-get($style, "type");
-  $uri: map-get($style, "uri");
-  $sizes: map-get($style, "sizes");
-
-  $e: ();
-
-  /// Font Type
-  $class: "--" + $type;
-  $var: "var(--" + $type + ")";
-  $base: (
-    $class: $var,
-  );
-  $e: map-merge($e, $base);
-
-  /// Sizes
-  @each $size in $sizes {
-    $class: "--" + $type + "-" + $size;
-    $var: "var(--" + $type + "-" + $size + ")";
-    $q: (
-      $class: $var,
-    );
-    $e: map-merge($e, $q);
-  }
-
-  @return ($e);
-}

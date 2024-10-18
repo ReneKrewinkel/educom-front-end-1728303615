@@ -76,17 +76,37 @@ select {
 /*! main-text-regular */
 @font-face {
   font-family: "main-text-regular";
-  src: url("resources/fonts/Inter-VariableFont_opsz,wght.woff2") format("woff2"), url("resources/fonts/Inter-VariableFont_opsz,wght.woff") format("woff"), url("resources/fonts/Inter-VariableFont_opsz,wght.ttf") format("ttf");
+  src: url("resources/fonts/Inter_18pt-Regular.woff2") format("woff2"), url("resources/fonts/Inter_18pt-Regular.woff") format("woff"), url("resources/fonts/Inter_18pt-Regular.ttf") format("ttf");
+}
+/*! main-text-extra-light */
+@font-face {
+  font-family: "main-text-extra-light";
+  src: url("resources/fonts/Inter_18pt-ExtraLight.woff2") format("woff2"), url("resources/fonts/Inter_18pt-ExtraLight.woff") format("woff"), url("resources/fonts/Inter_18pt-ExtraLight.ttf") format("ttf");
+}
+/*! main-text-light */
+@font-face {
+  font-family: "main-text-light";
+  src: url("resources/fonts/Inter_18pt-Light.woff2") format("woff2"), url("resources/fonts/Inter_18pt-Light.woff") format("woff"), url("resources/fonts/Inter_18pt-Light.ttf") format("ttf");
+}
+/*! main-text-medium */
+@font-face {
+  font-family: "main-text-medium";
+  src: url("resources/fonts/Inter_18pt-Medium.woff2") format("woff2"), url("resources/fonts/Inter_18pt-Medium.woff") format("woff"), url("resources/fonts/Inter_18pt-Medium.ttf") format("ttf");
+}
+/*! main-text-semi-bold */
+@font-face {
+  font-family: "main-text-semi-bold";
+  src: url("resources/fonts/Inter_18pt-SemiBold.woff2") format("woff2"), url("resources/fonts/Inter_18pt-SemiBold.woff") format("woff"), url("resources/fonts/Inter_18pt-SemiBold.ttf") format("ttf");
 }
 /*! main-text-bold */
 @font-face {
   font-family: "main-text-bold";
-  src: url("resources/fonts/Inter-VariableFont_opsz,wght.woff2") format("woff2"), url("resources/fonts/Inter-VariableFont_opsz,wght.woff") format("woff"), url("resources/fonts/Inter-VariableFont_opsz,wght.ttf") format("ttf");
+  src: url("resources/fonts/Inter_18pt-Bold.woff2") format("woff2"), url("resources/fonts/Inter_18pt-Bold.woff") format("woff"), url("resources/fonts/Inter_18pt-Bold.ttf") format("ttf");
 }
-/*! main-text-heading */
+/*! main-text-extra-bold */
 @font-face {
-  font-family: "main-text-heading";
-  src: url("resources/fonts/Inter-VariableFont_opsz,wght.woff2") format("woff2"), url("resources/fonts/Inter-VariableFont_opsz,wght.woff") format("woff"), url("resources/fonts/Inter-VariableFont_opsz,wght.ttf") format("ttf");
+  font-family: "main-text-extra-bold";
+  src: url("resources/fonts/Inter_18pt-ExtraBold.woff2") format("woff2"), url("resources/fonts/Inter_18pt-ExtraBold.woff") format("woff"), url("resources/fonts/Inter_18pt-ExtraBold.ttf") format("ttf");
 }
 /** CUSTOM PROPERTIES **/
 :root {
@@ -238,22 +258,13 @@ select {
   --fg-darkest-dark-40: black;
   --fg-darkest-dark-50: black;
   /** FONT **/
-  --main-text-regular: resources/fonts/Inter-VariableFont_opsz,wght;
-  --fs-14: 0.875rem;
-  --fs-20: 1.25rem;
-  --fs-36: 2.25rem;
-  --fs-44: 2.75rem;
-  --main-text-bold: resources/fonts/Inter-VariableFont_opsz,wght;
-  --fs-14: 0.875rem;
-  --fs-20: 1.25rem;
-  --fs-36: 2.25rem;
-  --fs-44: 2.75rem;
-  --main-text-heading: resources/fonts/Inter-VariableFont_opsz,wght;
-  --fs-14: 0.875rem;
-  --fs-20: 1.25rem;
-  --fs-36: 2.25rem;
-  --fs-44: 2.75rem;
-  /** SPACING **/
+  --main-text-regular: "main-text-regular";
+  --main-text-extra-light: "main-text-extra-light";
+  --main-text-light: "main-text-light";
+  --main-text-medium: "main-text-medium";
+  --main-text-semi-bold: "main-text-semi-bold";
+  --main-text-bold: "main-text-bold";
+  --main-text-extra-bold: "main-text-extra-bold";
 }
 
 /** UTILITY: Colors **/
@@ -800,65 +811,142 @@ select {
 }
 
 /** UTILITY: Fonts **/
-/*! main-text-regular */
---main-text-regular {
-  size: var(--main-text-regular);
+.main-text-regular-14 {
+  font-family: "main-text-regular";
+  font-size: 0.875rem;
 }
 
---main-text-regular-14 {
-  size: var(--main-text-regular-14);
+.main-text-regular-20 {
+  font-family: "main-text-regular";
+  font-size: 1.25rem;
 }
 
---main-text-regular-20 {
-  size: var(--main-text-regular-20);
+.main-text-regular-36 {
+  font-family: "main-text-regular";
+  font-size: 2.25rem;
 }
 
---main-text-regular-36 {
-  size: var(--main-text-regular-36);
+.main-text-regular-44 {
+  font-family: "main-text-regular";
+  font-size: 2.75rem;
 }
 
---main-text-regular-44 {
-  size: var(--main-text-regular-44);
+.main-text-extra-light-14 {
+  font-family: "main-text-extra-light";
+  font-size: 0.875rem;
 }
 
-/*! main-text-bold */
---main-text-bold {
-  size: var(--main-text-bold);
+.main-text-extra-light-20 {
+  font-family: "main-text-extra-light";
+  font-size: 1.25rem;
 }
 
---main-text-bold-14 {
-  size: var(--main-text-bold-14);
+.main-text-extra-light-36 {
+  font-family: "main-text-extra-light";
+  font-size: 2.25rem;
 }
 
---main-text-bold-20 {
-  size: var(--main-text-bold-20);
+.main-text-extra-light-44 {
+  font-family: "main-text-extra-light";
+  font-size: 2.75rem;
 }
 
---main-text-bold-36 {
-  size: var(--main-text-bold-36);
+.main-text-light-14 {
+  font-family: "main-text-light";
+  font-size: 0.875rem;
 }
 
---main-text-bold-44 {
-  size: var(--main-text-bold-44);
+.main-text-light-20 {
+  font-family: "main-text-light";
+  font-size: 1.25rem;
 }
 
-/*! main-text-heading */
---main-text-heading {
-  size: var(--main-text-heading);
+.main-text-light-36 {
+  font-family: "main-text-light";
+  font-size: 2.25rem;
 }
 
---main-text-heading-14 {
-  size: var(--main-text-heading-14);
+.main-text-light-44 {
+  font-family: "main-text-light";
+  font-size: 2.75rem;
 }
 
---main-text-heading-20 {
-  size: var(--main-text-heading-20);
+.main-text-medium-14 {
+  font-family: "main-text-medium";
+  font-size: 0.875rem;
 }
 
---main-text-heading-36 {
-  size: var(--main-text-heading-36);
+.main-text-medium-20 {
+  font-family: "main-text-medium";
+  font-size: 1.25rem;
 }
 
---main-text-heading-44 {
-  size: var(--main-text-heading-44);
+.main-text-medium-36 {
+  font-family: "main-text-medium";
+  font-size: 2.25rem;
+}
+
+.main-text-medium-44 {
+  font-family: "main-text-medium";
+  font-size: 2.75rem;
+}
+
+.main-text-semi-bold-14 {
+  font-family: "main-text-semi-bold";
+  font-size: 0.875rem;
+}
+
+.main-text-semi-bold-20 {
+  font-family: "main-text-semi-bold";
+  font-size: 1.25rem;
+}
+
+.main-text-semi-bold-36 {
+  font-family: "main-text-semi-bold";
+  font-size: 2.25rem;
+}
+
+.main-text-semi-bold-44 {
+  font-family: "main-text-semi-bold";
+  font-size: 2.75rem;
+}
+
+.main-text-bold-14 {
+  font-family: "main-text-bold";
+  font-size: 0.875rem;
+}
+
+.main-text-bold-20 {
+  font-family: "main-text-bold";
+  font-size: 1.25rem;
+}
+
+.main-text-bold-36 {
+  font-family: "main-text-bold";
+  font-size: 2.25rem;
+}
+
+.main-text-bold-44 {
+  font-family: "main-text-bold";
+  font-size: 2.75rem;
+}
+
+.main-text-extra-bold-14 {
+  font-family: "main-text-extra-bold";
+  font-size: 0.875rem;
+}
+
+.main-text-extra-bold-20 {
+  font-family: "main-text-extra-bold";
+  font-size: 1.25rem;
+}
+
+.main-text-extra-bold-36 {
+  font-family: "main-text-extra-bold";
+  font-size: 2.25rem;
+}
+
+.main-text-extra-bold-44 {
+  font-family: "main-text-extra-bold";
+  font-size: 2.75rem;
 }/*# sourceMappingURL=main.css.map */
