@@ -78,26 +78,6 @@ select {
   font-family: "main-text-regular";
   src: url("../fonts/Inter_18pt-Regular.woff2") format("woff2"), url("../fonts/Inter_18pt-Regular.woff") format("woff"), url("../fonts/Inter_18pt-Regular.ttf") format("ttf");
 }
-/*! main-text-extra-light */
-@font-face {
-  font-family: "main-text-extra-light";
-  src: url("../fonts/Inter_18pt-ExtraLight.woff2") format("woff2"), url("../fonts/Inter_18pt-ExtraLight.woff") format("woff"), url("../fonts/Inter_18pt-ExtraLight.ttf") format("ttf");
-}
-/*! main-text-light */
-@font-face {
-  font-family: "main-text-light";
-  src: url("../fonts/Inter_18pt-Light.woff2") format("woff2"), url("../fonts/Inter_18pt-Light.woff") format("woff"), url("../fonts/Inter_18pt-Light.ttf") format("ttf");
-}
-/*! main-text-medium */
-@font-face {
-  font-family: "main-text-medium";
-  src: url("../fonts/Inter_18pt-Medium.woff2") format("woff2"), url("../fonts/Inter_18pt-Medium.woff") format("woff"), url("../fonts/Inter_18pt-Medium.ttf") format("ttf");
-}
-/*! main-text-semi-bold */
-@font-face {
-  font-family: "main-text-semi-bold";
-  src: url("../fonts/Inter_18pt-SemiBold.woff2") format("woff2"), url("../fonts/Inter_18pt-SemiBold.woff") format("woff"), url("../fonts/Inter_18pt-SemiBold.ttf") format("ttf");
-}
 /*! main-text-bold */
 @font-face {
   font-family: "main-text-bold";
@@ -259,10 +239,6 @@ select {
   --fg-darkest-dark-50: black;
   /** FONT **/
   --main-text-regular: "main-text-regular";
-  --main-text-extra-light: "main-text-extra-light";
-  --main-text-light: "main-text-light";
-  --main-text-medium: "main-text-medium";
-  --main-text-semi-bold: "main-text-semi-bold";
   --main-text-bold: "main-text-bold";
 }
 
@@ -833,9 +809,24 @@ body {
   font-size: 0.875rem;
 }
 
+.main-text-regular-16 {
+  font-family: "main-text-regular";
+  font-size: 1rem;
+}
+
+.main-text-regular-18 {
+  font-family: "main-text-regular";
+  font-size: 1.125rem;
+}
+
 .main-text-regular-20 {
   font-family: "main-text-regular";
   font-size: 1.25rem;
+}
+
+.main-text-regular-24 {
+  font-family: "main-text-regular";
+  font-size: 1.5rem;
 }
 
 .main-text-regular-36 {
@@ -848,94 +839,29 @@ body {
   font-size: 2.75rem;
 }
 
-.main-text-extra-light-14 {
-  font-family: "main-text-extra-light";
-  font-size: 0.875rem;
-}
-
-.main-text-extra-light-20 {
-  font-family: "main-text-extra-light";
-  font-size: 1.25rem;
-}
-
-.main-text-extra-light-36 {
-  font-family: "main-text-extra-light";
-  font-size: 2.25rem;
-}
-
-.main-text-extra-light-44 {
-  font-family: "main-text-extra-light";
-  font-size: 2.75rem;
-}
-
-.main-text-light-14 {
-  font-family: "main-text-light";
-  font-size: 0.875rem;
-}
-
-.main-text-light-20 {
-  font-family: "main-text-light";
-  font-size: 1.25rem;
-}
-
-.main-text-light-36 {
-  font-family: "main-text-light";
-  font-size: 2.25rem;
-}
-
-.main-text-light-44 {
-  font-family: "main-text-light";
-  font-size: 2.75rem;
-}
-
-.main-text-medium-14 {
-  font-family: "main-text-medium";
-  font-size: 0.875rem;
-}
-
-.main-text-medium-20 {
-  font-family: "main-text-medium";
-  font-size: 1.25rem;
-}
-
-.main-text-medium-36 {
-  font-family: "main-text-medium";
-  font-size: 2.25rem;
-}
-
-.main-text-medium-44 {
-  font-family: "main-text-medium";
-  font-size: 2.75rem;
-}
-
-.main-text-semi-bold-14 {
-  font-family: "main-text-semi-bold";
-  font-size: 0.875rem;
-}
-
-.main-text-semi-bold-20 {
-  font-family: "main-text-semi-bold";
-  font-size: 1.25rem;
-}
-
-.main-text-semi-bold-36 {
-  font-family: "main-text-semi-bold";
-  font-size: 2.25rem;
-}
-
-.main-text-semi-bold-44 {
-  font-family: "main-text-semi-bold";
-  font-size: 2.75rem;
-}
-
 .main-text-bold-14 {
   font-family: "main-text-bold";
   font-size: 0.875rem;
 }
 
+.main-text-bold-16 {
+  font-family: "main-text-bold";
+  font-size: 1rem;
+}
+
+.main-text-bold-18 {
+  font-family: "main-text-bold";
+  font-size: 1.125rem;
+}
+
 .main-text-bold-20 {
   font-family: "main-text-bold";
   font-size: 1.25rem;
+}
+
+.main-text-bold-24 {
+  font-family: "main-text-bold";
+  font-size: 1.5rem;
 }
 
 .main-text-bold-36 {
@@ -966,20 +892,30 @@ a {
 }
 a:hover {
   color: var(--fg-accent);
-}
-
-.new-in-block a {
-  text-decoration: none;
-}
-.new-in-block a:hover {
-  color: var(--fg-primary);
+  transition: all 0.4ms ease;
 }
 
 .nav a {
-  color: var(--fg-dark);
+  color: var(--fg-darkest);
   padding: 1.25rem;
 }
 .nav a:hover {
+  color: var(--fg-accent);
+  transition: all 0.4ms ease;
+}
+
+.new-in-block a {
+  color: var(--fg-light);
+}
+.new-in-block a:hover {
+  color: var(--fg-primary);
+  transition: all 0.4ms ease;
+}
+
+.small-card a {
+  color: var(--fg-darkest);
+}
+.small-card a:hover {
   color: var(--fg-accent);
   transition: all 0.4ms ease;
 }
@@ -1036,12 +972,22 @@ h2 {
 
 h3 {
   font-family: "heading";
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 h4 {
   font-family: "heading";
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-family: "heading";
   font-size: 1.125rem;
+}
+
+h6 {
+  font-family: "heading";
+  font-size: 1rem;
 }
 
 .nav {
@@ -1084,6 +1030,7 @@ h4 {
 .small-card {
   display: flex;
   flex-direction: row;
+  padding: 1.25rem 0;
 }
 .small-card img {
   -o-object-fit: contain;

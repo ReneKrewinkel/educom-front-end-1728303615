@@ -1,6 +1,11 @@
 {
   "unit": "rem",
-  "page": {"backgroundColor": "light", "margin-left": 50, "margin-right": 50, "padding": 20},
+  "page": {
+    "backgroundColor": "light",
+    "margin-left": 50,
+    "margin-right": 50,
+    "padding": 20
+  },
   "colors": [
     { "type": "primary", "color": "#E9AB53", "shades": [10, 20, 30, 40, 50] },
     { "type": "accent", "color": "#F15E50", "shades": [10, 20, 30, 40, 50] },
@@ -10,21 +15,27 @@
     { "type": "darkest", "color": "#00001A", "shades": [10, 20, 30, 40, 50] }
   ],
   "fonts": [
-    { "type": "main-text-regular","uri": "'../fonts/Inter_18pt-Regular'", "sizes": [14, 20, 36, 44] },
-    { "type": "main-text-extra-light","uri": "'../fonts/Inter_18pt-ExtraLight'", "sizes": [14, 20, 36, 44] },
-    { "type": "main-text-light","uri": "'../fonts/Inter_18pt-Light'", "sizes": [14, 20, 36, 44] },
-    { "type": "main-text-medium","uri": "'../fonts/Inter_18pt-Medium'", "sizes": [14, 20, 36, 44] },
-    { "type": "main-text-semi-bold","uri": "'../fonts/Inter_18pt-SemiBold'", "sizes": [14, 20, 36, 44] },
-    { "type": "main-text-bold","uri": "'../fonts/Inter_18pt-Bold'", "sizes": [14, 20, 36, 44] }
+    {
+      "type": "main-text-regular",
+      "uri": "'../fonts/Inter_18pt-Regular'",
+      "sizes": [14, 16, 18, 20, 24, 36, 44]
+    },
+    {
+      "type": "main-text-bold",
+      "uri": "'../fonts/Inter_18pt-Bold'",
+      "sizes": [14, 16, 18, 20, 24, 36, 44]
+    }
   ],
   "headings": {
     "type": "heading",
     "uri": "'../fonts/Inter_18pt-Bold'",
     "variant": [
-      {"h1": 44},
-      {"h2": 36},
-      {"h3": 20},
-      {"h4": 18}
+      { "h1": 44 },
+      { "h2": 36 },
+      { "h3": 24 },
+      { "h4": 20 },
+      { "h5": 18 },
+      { "h6": 16 }
     ]
   },
 
@@ -34,8 +45,8 @@
     "large": 3
   },
   "padding": [
-    { "type": "small", "size": [20]},
-    { "type": "medium", "size": [40]},
-    { "type": "large", "size": [80]}
+    { "type": "small", "size": [20] },
+    { "type": "medium", "size": [40] },
+    { "type": "large", "size": [80] }
   ]
 }
